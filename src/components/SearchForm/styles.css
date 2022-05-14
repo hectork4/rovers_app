@@ -1,0 +1,95 @@
+.search-form{
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px 0px;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-pack: justify;
+    -ms-flex-align: center;
+    text-align: center;
+    flex-direction: initial;
+    justify-content: center;
+}
+
+.search-form > div {
+    position: relative;
+    border: 1px solid #ddd;
+}
+
+.search-form label{
+    color: white;
+    font-weight: 600;
+}
+
+.search-form .item-form{
+    background: #fff;
+    border-radius: 0;
+    display: block;
+    border: 0;
+    padding: 10px 20px 10px 45px;
+    font-size: 16px;
+    color: #555;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+.search-form .item-form.disabled{
+    background-color: rgb(238, 238, 238);
+}
+
+.search-form input{
+    height: 20px;
+}
+
+.search-form select{
+    height: 40px;
+}
+
+.search-form button{
+    background: #b78a62;
+    white-space: nowrap;
+    border-radius: 0.5px;
+    font-size: 20px;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+.paginationButton{
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.paginationButton:hover{
+    background-color: #305c32;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+@media (max-width: 1024px) {
+    .search-form{
+        display: inline-block;
+    }
+
+    .search-form > div {
+        display: inherit;
+        width: 200px;
+    }
+
+    .search-form button{
+        width: 180px;
+        height: 50px;
+    }
+
+    .search-form .item-form{
+        display: inline-flex;
+    }
+
+}

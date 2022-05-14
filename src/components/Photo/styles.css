@@ -1,0 +1,29 @@
+.Photo {
+    margin-bottom: .5em;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-bottom: 10px;
+    break-inside: avoid
+}
+  
+.Photo h4 {
+    background: rgba(0, 0, 0, .3);
+    font-size: 12px;
+    color: #fff;
+    margin: 0;
+    position: absolute;
+    grid-row: 2;
+    grid-column: 1;
+    padding: 0.2em 0.5em;
+    justify-self: start;
+}
+  
+.Photo img {
+    width: 100%;
+    object-fit: contain;
+    grid-row: 1 / -1;
+    grid-column: 1;
+    max-width: 100%;
+    display: block;
+}
